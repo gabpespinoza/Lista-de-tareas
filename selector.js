@@ -1,29 +1,25 @@
 // 1 Seleccionar Elementos DOM
 let inputText = document.getElementById("inputText");
 let botonEntrada = document.getElementById("buttonInput");
-let listaTareas = document.getElementById("contenedor-tareas")
+let listaDeTareas = document.getElementById("lista-tareas");
+let interruptoresTareas = document.getElementsByClassName("tarea-switch")
 
 
 // 2.  vincular elementos(event targets)  a eventos y funciones(listeners)
-inputText.addEventListener("click", agregarTarea);
+botonEntrada.addEventListener("click", agregarTarea);
+
 
 //3. Funciones para los elementos
-function agregarTarea() {
-    inputText
-    let tarea = inputTarea.value;
+function agregarTarea(event) {
+    let tarea = inputText.value.trim();
 
     if (tarea.trim() !== "") {
-        listaTareas
-        let nuevaTarea = document.createElement("tarea");
+        let nuevaTarea = document.createElement("li");
         nuevaTarea.textContent = tarea;
-        listaTareas.appendChild(nuevaTarea);
-
-        inputTarea.value = "";
+        listaDeTareas.appendChild(nuevaTarea);
+        inputText.value = "";
     }
 }
 
+
 console.log("hola")
-console.log("it's a test")
-
-
-//Apend, pasarle varios elemento vs apendchail 

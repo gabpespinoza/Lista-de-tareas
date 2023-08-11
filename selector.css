@@ -1,6 +1,6 @@
 body {
-  margin: 20px;
-  padding: 0;
+  margin: 50px;
+  padding: 10;
   font-family: Arial, sans-serif;
   background-color: rgb(211, 182, 238);
 }
@@ -9,8 +9,8 @@ h1 {
   text-align: center;
 }
 
-input[type="text"] {
-  padding: 5px;
+.inputText {
+  padding: 25px;
   width: 200px;
   position: relative;
 
@@ -25,12 +25,19 @@ input[type="text"] {
 }
 
 
-
 button {
   background-color: #b36029;
   color: white;
   padding: 10px 20px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  text-align: center;
+  border-radius: 14px;
+}
+
+.tarea-switch {
+  margin-right: 10px;
+}
+
+.tarea-texto {
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
 }
